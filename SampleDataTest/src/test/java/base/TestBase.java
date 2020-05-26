@@ -39,7 +39,7 @@ public class TestBase {
 	    log.debug("config file loaded");
 	    fis=new FileInputStream(System.getProperty("user.dir")+"//src//test///resources//properties//or");
 	    or.load(fis);
-	    log.debug("or file loaded");
+	    log.debug("Object Repo file loaded");
 		if(config.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//exe//chromedriver");
@@ -63,7 +63,7 @@ public class TestBase {
 			driver.quit();
 		}
 
-		log.debug("test execution completed !!!");
+		log.debug("Test is Complete");
 	}
 	}
 	
