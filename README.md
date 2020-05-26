@@ -8,3 +8,5 @@ Some feature of the project includes --
 4) Runmodes 
 
 
+Project is work in progress. Read me file will be udpated accordilgy 
+
