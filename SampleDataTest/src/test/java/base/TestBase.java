@@ -6,12 +6,17 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
+
+import utilities.ExcelReader;
+
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
@@ -23,6 +28,7 @@ public class TestBase {
 	public static Properties config=new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoyLogger");
+	public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"//src//test//resources//excel//testdata.xlsx");
 	
 	
 	
@@ -55,6 +61,26 @@ public class TestBase {
 		driver.manage().window().maximize();
 	}
 	}
+	
+	
+	public boolean isElementPresent(By by)
+	{
+		try {
+			driver.findElement(by);
+			return true;
+		}catch(NoSuchElementException e)
+		{
+	return false;
+		}
+	
+	}
+	
+	
+	
+	
+	
+	
+	
 	@AfterSuite
 	
 	public void endDriver()
