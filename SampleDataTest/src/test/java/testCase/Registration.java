@@ -3,6 +3,7 @@ package testCase;
 import java.util.Hashtable;
 
 import org.openqa.selenium.By;
+import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import base.TestBase;
@@ -18,6 +19,7 @@ public void registerUser(Hashtable<String,String> data)
 	driver.findElement(By.xpath(or.getProperty("clickSignIn"))).click();
 	driver.findElement(By.id(or.getProperty("emailAddress"))).sendKeys(data.get("emailAddress"));
 	driver.findElement(By.name(or.getProperty("createAccount"))).click();
+	Reporter.log("Registration complete");
 }
 
 @DataProvider 
