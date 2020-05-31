@@ -12,13 +12,14 @@ public class Registration extends TestBase {
 
 @Test(dataProvider="getData")
 
-public void registerUser(Hashtable<String,String> data)
+public void registerUser(Hashtable<String,String> data) throws InterruptedException
 {
 	System.out.println("Starting Registration");
 	log.info("Registration Started");
 	driver.findElement(By.xpath(or.getProperty("clickSignIn"))).click();
 	driver.findElement(By.id(or.getProperty("emailAddress"))).sendKeys(data.get("emailAddress"));
 	driver.findElement(By.name(or.getProperty("createAccount"))).click();
+	Thread.sleep(5000);
 }
 
 @DataProvider 
