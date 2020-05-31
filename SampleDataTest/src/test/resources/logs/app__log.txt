@@ -1,0 +1,6 @@
+INFO    2020-05-31 03:16:27,834 [main] Adding Log  - Config File is loaded
+INFO    2020-05-31 03:16:27,835 [main] Adding Log  - OR File is loaded
+INFO    2020-05-31 03:16:31,067 [main] Adding Log  - Registration Started
+INFO    2020-05-31 03:16:31,075 [main] Adding Log  - Registration Started
+INFO    2020-05-31 03:16:36,127 [main] Adding Log  - Starting Login
+INFO    2020-05-31 03:16:36,256 [main] Adding Log  - driver is closed

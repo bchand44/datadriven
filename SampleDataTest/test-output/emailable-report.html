@@ -8,63 +8,33 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Simple Data Driven Framework</th></tr>
-<tr><td><a href="#t0">Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">36</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">OrderItems</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">9</td><td></td><td></td></tr>
-<tr><td><a href="#t2">Registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">146</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t3">VerifyLogin</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">227</th><th colspan="2"></th></tr>
+<tr><th colspan="8">Sample Data Test</th></tr>
+<tr><td><a href="#t0">Registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">60</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">11</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Ordering</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">7</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">VerifyLogin</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">2</th><th class="num">0</th><th class="num">0</th><th class="num attn">3</th><th class="num">81</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Simple Data Driven Framework</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCase.Login</td><td><a href="#m0">loginUser</a></td><td rowspan="1">1590610430728</td><td rowspan="1">6</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">OrderItems &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCase.Ordering</td><td><a href="#m1">orderItems</a></td><td rowspan="1">1590610435780</td><td rowspan="1">3</td></tr></tbody>
-<tbody id="t2"><tr><th colspan="4">Registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCase.Registration</td><td><a href="#m2">registerUser</a></td><td rowspan="2">1590610435901</td><td rowspan="2">41</td></tr><tr class="failedeven"><td><a href="#m3">registerUser</a></td></tr></tbody>
-<tbody id="t3"><tr><th colspan="4">VerifyLogin &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCase.VerifyLoginPage</td><td><a href="#m4">verifyLoginPage</a></td><td rowspan="1">1590610435968</td><td rowspan="1">34</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Data Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Registration &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">testCase.Registration</td><td><a href="#m0">registerUser</a></td><td rowspan="2">1590908904173</td><td rowspan="2">8</td></tr><tr class="failedeven"><td><a href="#m1">registerUser</a></td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCase.Login</td><td><a href="#m2">loginUser</a></td><td rowspan="1">1590908909259</td><td rowspan="1">4</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Ordering &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCase.Ordering</td><td><a href="#m3">orderItems</a></td><td rowspan="1">1590908909288</td><td rowspan="1">2</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">VerifyLogin &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCase.VerifyLoginPage</td><td><a href="#m4">verifyLoginPage</a></td><td rowspan="1">1590908909304</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>Login</h2><h3 id="m0">testCase.Login#loginUser</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login complete<br/><a href="/Users/birendra/git/datadriven/SampleDataTest/src/test/resources/properties/a.png">Screenshot</a></div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>OrderItems</h2><h3 id="m1">testCase.Ordering#orderItems</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Order complete</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>Registration</h2><h3 id="m2">testCase.Registration#registerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{zipCode=22222.0, lastName=Chand, firstName=Bivek, emailAddress=helo@test.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;birendras-MacBook-Air.local&apos;, ip: &apos;2601:586:8003:8830:0:0:0:db9f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19E287, safari:platformVersion: 10.15.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 50408DE6-C53D-4EE5-8427-1F57E7566BF5
-*** Element info: {Using=id, value=email_create}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testCase.Registration.registerUser(Registration.java:20)
+<h2>Registration</h2><h3 id="m0">testCase.Registration#registerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{zipCode=11111.0, lastName=Chand, firstName=Birendra, emailAddress=abctest@test.com}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Login Test Complete<br/><a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a><br/><br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
+	at org.openqa.selenium.By.xpath(By.java:92)
+	at testCase.Registration.registerUser(Registration.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">testCase.Registration#registerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{zipCode=11111.0, lastName=Chand, firstName=Birendra, emailAddress=abctest@test.com}</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: 
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;birendras-MacBook-Air.local&apos;, ip: &apos;2601:586:8003:8830:0:0:0:db9f%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.4&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.safari.SafariDriver
-Capabilities {acceptInsecureCerts: false, browserName: Safari, browserVersion: 13.1, javascriptEnabled: true, platform: MAC, platformName: MAC, safari:automaticInspection: false, safari:automaticProfiling: false, safari:diagnose: false, safari:platformBuildVersion: 19E287, safari:platformVersion: 10.15.4, safari:useSimulator: false, setWindowRect: true, strictFileInteractability: false, webkit:WebRTC: {DisableICECandidateFiltering: false, DisableInsecureMediaCapture: false}}
-Session ID: 50408DE6-C53D-4EE5-8427-1F57E7566BF5
-*** Element info: {Using=id, value=email_create}
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
-	at org.openqa.selenium.By$ById.findElement(By.java:188)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testCase.Registration.registerUser(Registration.java:20)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCase.Registration#registerUser</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{zipCode=22222.0, lastName=Chand, firstName=Bivek, emailAddress=helo@test.com}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Login Test Complete<br/><a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a><br/><br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
+	at org.openqa.selenium.By.xpath(By.java:92)
+	at testCase.Registration.registerUser(Registration.java:19)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>VerifyLogin</h2><h3 id="m4">testCase.VerifyLoginPage#verifyLoginPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Login</h2><h3 id="m2">testCase.Login#loginUser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Ordering</h2><h3 id="m3">testCase.Ordering#orderItems</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>VerifyLogin</h2><h3 id="m4">testCase.VerifyLoginPage#verifyLoginPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Login Test Complete<br/><a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a><br/><br></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
 	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
 	at org.openqa.selenium.By.xpath(By.java:92)
 	at testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:18)

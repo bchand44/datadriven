@@ -1,9 +1,9 @@
 package testCase;
 
+import org.testng.annotations.Test;
 import java.util.Hashtable;
 
 import org.openqa.selenium.By;
-import org.testng.Reporter;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import base.TestBase;
@@ -12,14 +12,14 @@ public class Registration extends TestBase {
 
 @Test(dataProvider="getData")
 
-public void registerUser(Hashtable<String,String> data)
+public void registerUser(Hashtable<String,String> data) throws InterruptedException
 {
 	System.out.println("Starting Registration");
-	log.debug("registration started");
+	log.info("Registration Started");
 	driver.findElement(By.xpath(or.getProperty("clickSignIn"))).click();
 	driver.findElement(By.id(or.getProperty("emailAddress"))).sendKeys(data.get("emailAddress"));
 	driver.findElement(By.name(or.getProperty("createAccount"))).click();
-	Reporter.log("Registration complete");
+	Thread.sleep(5000);
 }
 
 @DataProvider 

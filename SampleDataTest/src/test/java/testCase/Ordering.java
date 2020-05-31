@@ -1,6 +1,6 @@
 package testCase;
 
-import org.testng.Reporter;
+import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
 
@@ -15,7 +15,6 @@ public void orderItems()
 {
 	System.out.println("Order Started");
 	log.debug("order completed");
-	Reporter.log("Order complete");
 }
 
 }
