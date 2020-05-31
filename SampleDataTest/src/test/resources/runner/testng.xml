@@ -1,37 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Simple Data Driven Framework">
-  
-  <listeners>
-  <listener class-name="org.uncommons.reportng.HTMLReporter"/>
-  <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
-  
-  
+<suite name="Suite">
+
+<listeners>
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+      <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+      
   </listeners>
-  
- 
-  <test thread-count="5" name="Login">
+  <test thread-count="5" name="Test">
     <classes>
       <class name="testCase.Login"/>
-      
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="OrderItems">
-    <classes>
-      
-      <class name="testCase.Ordering"></class>
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Registration">
-    <classes>
-      
+      <class name="testCase.Ordering"/>
       <class name="testCase.Registration"></class>
-    </classes>
-  </test> <!-- Test -->
-    <test thread-count="5" name="VerifyLogin">
-    <classes>
-      
-      <class name="testCase.VerifyLoginPage"></class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

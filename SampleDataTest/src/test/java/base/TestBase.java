@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -27,7 +28,7 @@ public class TestBase {
 	public static Properties or=new Properties();
 	public static Properties config=new Properties();
 	public static FileInputStream fis;
-	public static Logger log = Logger.getLogger("devpinoyLogger");
+	public static Logger log = Logger.getLogger("Adding Log");
 	public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"//src//test//resources//excel//testdata.xlsx");
 	
 	
@@ -39,16 +40,16 @@ public class TestBase {
 	{
 		if(driver==null)
 		{
-		
+		PropertyConfigurator.configure("./src/test/resources/properties/log4j.properties");
 		fis=new FileInputStream(System.getProperty("user.dir")+"//src//test///resources//properties//config");
 		config.load(fis);
-	    log.debug("config file loaded");
+	    log.info("Config File is loaded");
 	    fis=new FileInputStream(System.getProperty("user.dir")+"//src//test///resources//properties//or");
 	    or.load(fis);
-	    log.debug("Object Repo file loaded");
+	    log.info("OR File is loaded");
 		if(config.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//exe//chromedriver");
+			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//exe//chromedriver");
 			driver= new ChromeDriver();
 		}
 		else if(config.getProperty("browser").equalsIgnoreCase("safari"))
@@ -89,7 +90,7 @@ public class TestBase {
 			driver.quit();
 		}
 
-		log.debug("Test is Complete");
+	log.info("driver is closed");
 	}
 	}
 	

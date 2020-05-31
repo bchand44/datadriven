@@ -1,9 +1,4 @@
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/utilities/TestUtil.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/testCase/Login.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/testCase/VerifyLoginPage.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/base/TestBase.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/testCase/Registration.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/testCase/Ordering.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/utilities/ExcelReader.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/utilities/RamdomDataGenerator.java
-/Users/birendra/git/datadriven/SampleDataTest/src/test/java/listeners/GeneralListeners.java
+/Users/birendra/eclipse-workspace/SampleDataTest/src/test/java/base/TestBase.java
+/Users/birendra/eclipse-workspace/SampleDataTest/src/test/java/testCase/Login.java
+/Users/birendra/eclipse-workspace/SampleDataTest/src/test/java/testCase/Ordering.java
+/Users/birendra/eclipse-workspace/SampleDataTest/src/test/java/testCase/Registration.java

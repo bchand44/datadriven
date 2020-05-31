@@ -1,9 +1,4 @@
+testCase/Ordering.class
 base/TestBase.class
 testCase/Login.class
-utilities/TestUtil.class
-listeners/GeneralListeners.class
-testCase/Ordering.class
-utilities/ExcelReader.class
-utilities/RamdomDataGenerator.class
-testCase/VerifyLoginPage.class
 testCase/Registration.class
