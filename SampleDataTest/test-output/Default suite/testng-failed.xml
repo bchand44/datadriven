@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.Registration">
+      <class name="testCase.VerifyLoginPage">
         <methods>
           <include name="startDriver"/>
+          <include name="verifyLoginPage"/>
           <include name="endDriver"/>
-          <include name="registerUser" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- testCase.Registration -->
+      </class> <!-- testCase.VerifyLoginPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

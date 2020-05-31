@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Test Complete]]>
+    </line>
   </reporter-output>
-  <suite started-at="2020-05-31T00:34:40 EDT" name="Default suite" finished-at="2020-05-31T00:34:43 EDT" duration-ms="2611">
+  <suite started-at="2020-05-31T02:00:32 EDT" name="Sample Data Test" finished-at="2020-05-31T02:00:40 EDT" duration-ms="8279">
     <groups>
     </groups>
-    <test started-at="2020-05-31T00:34:40 EDT" name="Default test" finished-at="2020-05-31T00:34:43 EDT" duration-ms="2611">
+    <test started-at="2020-05-31T02:00:32 EDT" name="Registration" finished-at="2020-05-31T02:00:34 EDT" duration-ms="2311">
       <class name="testCase.Registration">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.Registration@4fbe37eb]" started-at="2020-05-31T00:34:37 EDT" name="startDriver" finished-at="2020-05-31T00:34:40 EDT" duration-ms="3828" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startDriver -->
-        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4fbe37eb]" started-at="2020-05-31T00:34:40 EDT" name="registerUser" data-provider="getData" finished-at="2020-05-31T00:34:42 EDT" duration-ms="1136" status="PASS">
+        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@36b4091c]" started-at="2020-05-31T02:00:32 EDT" name="registerUser" data-provider="getData" finished-at="2020-05-31T02:00:33 EDT" duration-ms="1094" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +21,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4fbe37eb]" started-at="2020-05-31T00:34:42 EDT" name="registerUser" data-provider="getData" finished-at="2020-05-31T00:34:43 EDT" duration-ms="1429" status="PASS">
+        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@36b4091c]" started-at="2020-05-31T02:00:33 EDT" name="registerUser" data-provider="getData" finished-at="2020-05-31T02:00:34 EDT" duration-ms="1171" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,11 +32,42 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.Registration@4fbe37eb]" started-at="2020-05-31T00:34:48 EDT" name="endDriver" finished-at="2020-05-31T00:34:48 EDT" duration-ms="107" status="PASS">
+      </class> <!-- testCase.Registration -->
+    </test> <!-- Registration -->
+    <test started-at="2020-05-31T02:00:39 EDT" name="Login" finished-at="2020-05-31T02:00:39 EDT" duration-ms="10">
+      <class name="testCase.Login">
+        <test-method signature="loginUser()[pri:0, instance:testCase.Login@58ce9668]" started-at="2020-05-31T02:00:39 EDT" name="loginUser" finished-at="2020-05-31T02:00:39 EDT" duration-ms="3" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Test Complete]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- loginUser -->
+      </class> <!-- testCase.Login -->
+    </test> <!-- Login -->
+    <test started-at="2020-05-31T02:00:39 EDT" name="Ordering" finished-at="2020-05-31T02:00:39 EDT" duration-ms="6">
+      <class name="testCase.Ordering">
+        <test-method signature="orderItems()[pri:0, instance:testCase.Ordering@401f7633]" started-at="2020-05-31T02:00:39 EDT" name="orderItems" finished-at="2020-05-31T02:00:39 EDT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderItems -->
+      </class> <!-- testCase.Ordering -->
+    </test> <!-- Ordering -->
+    <test started-at="2020-05-31T02:00:39 EDT" name="VerifyLogin" finished-at="2020-05-31T02:00:40 EDT" duration-ms="904">
+      <class name="testCase.VerifyLoginPage">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.VerifyLoginPage@7a67e3c6]" started-at="2020-05-31T02:00:29 EDT" name="startDriver" finished-at="2020-05-31T02:00:32 EDT" duration-ms="3185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startDriver -->
+        <test-method signature="verifyLoginPage()[pri:0, instance:testCase.VerifyLoginPage@7a67e3c6]" started-at="2020-05-31T02:00:39 EDT" name="verifyLoginPage" finished-at="2020-05-31T02:00:40 EDT" duration-ms="902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginPage -->
+        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.VerifyLoginPage@7a67e3c6]" started-at="2020-05-31T02:00:40 EDT" name="endDriver" finished-at="2020-05-31T02:00:40 EDT" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endDriver -->
-      </class> <!-- testCase.Registration -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCase.VerifyLoginPage -->
+    </test> <!-- VerifyLogin -->
+  </suite> <!-- Sample Data Test -->
 </testng-results>

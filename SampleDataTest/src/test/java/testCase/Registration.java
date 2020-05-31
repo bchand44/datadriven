@@ -1,5 +1,6 @@
 package testCase;
 
+import org.testng.annotations.Test;
 import java.util.Hashtable;
 
 import org.openqa.selenium.By;
