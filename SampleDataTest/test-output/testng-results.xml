@@ -2,39 +2,42 @@
 <testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
     <line>
-      <![CDATA[Login Test Complete]]>
+      <![CDATA[Test is Complete]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a>]]>
+      <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
     </line>
     <line>
-      <![CDATA[<br>]]>
+      <![CDATA[Test is Complete]]>
     </line>
     <line>
-      <![CDATA[Login Test Complete]]>
+      <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
     </line>
     <line>
-      <![CDATA[<a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a>]]>
+      <![CDATA[Login Completed]]>
     </line>
     <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[Login Test Complete]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a>]]>
+      <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png">ScreenShot Caputured</a>]]>
     </line>
     <line>
       <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png"><img src="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png" height=200 width=200></img></a>]]>
+    </line>
+    <line>
+      <![CDATA[Test is Complete]]>
+    </line>
+    <line>
+      <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
     </line>
   </reporter-output>
-  <suite started-at="2020-05-31T03:08:24 EDT" name="Sample Data Test" finished-at="2020-05-31T03:08:29 EDT" duration-ms="5166">
+  <suite started-at="2020-06-05T14:11:21 EDT" name="Sample Data Test" finished-at="2020-06-05T14:11:26 EDT" duration-ms="5172">
     <groups>
     </groups>
-    <test started-at="2020-05-31T03:08:24 EDT" name="Registration" finished-at="2020-05-31T03:08:24 EDT" duration-ms="60">
+    <test started-at="2020-06-05T14:11:21 EDT" name="Registration" finished-at="2020-06-05T14:11:21 EDT" duration-ms="74">
       <class name="testCase.Registration">
-        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4671115f]" started-at="2020-05-31T03:08:24 EDT" name="registerUser" data-provider="getData" finished-at="2020-05-31T03:08:24 EDT" duration-ms="8" status="FAIL">
+        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4671115f]" started-at="2020-06-05T14:11:21 EDT" name="registerUser" data-provider="getData" finished-at="2020-06-05T14:11:21 EDT" duration-ms="9" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -84,17 +87,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
             <line>
-              <![CDATA[Login Test Complete]]>
+              <![CDATA[Test is Complete]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
+              <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- registerUser -->
-        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4671115f]" started-at="2020-05-31T03:08:24 EDT" name="registerUser" data-provider="getData" finished-at="2020-05-31T03:08:24 EDT" duration-ms="3" status="FAIL">
+        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4671115f]" started-at="2020-06-05T14:11:21 EDT" name="registerUser" data-provider="getData" finished-at="2020-06-05T14:11:21 EDT" duration-ms="4" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -144,41 +144,50 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
             <line>
-              <![CDATA[Login Test Complete]]>
+              <![CDATA[Test is Complete]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
+              <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- registerUser -->
       </class> <!-- testCase.Registration -->
     </test> <!-- Registration -->
-    <test started-at="2020-05-31T03:08:29 EDT" name="Login" finished-at="2020-05-31T03:08:29 EDT" duration-ms="11">
+    <test started-at="2020-06-05T14:11:26 EDT" name="Login" finished-at="2020-06-05T14:11:26 EDT" duration-ms="11">
       <class name="testCase.Login">
-        <test-method signature="loginUser()[pri:0, instance:testCase.Login@172b013]" started-at="2020-05-31T03:08:29 EDT" name="loginUser" finished-at="2020-05-31T03:08:29 EDT" duration-ms="4" status="PASS">
+        <test-method signature="loginUser()[pri:0, instance:testCase.Login@172b013]" started-at="2020-06-05T14:11:26 EDT" name="loginUser" finished-at="2020-06-05T14:11:26 EDT" duration-ms="4" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[Login Completed]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png">ScreenShot Caputured</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png"><img src="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png" height=200 width=200></img></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginUser -->
       </class> <!-- testCase.Login -->
     </test> <!-- Login -->
-    <test started-at="2020-05-31T03:08:29 EDT" name="Ordering" finished-at="2020-05-31T03:08:29 EDT" duration-ms="7">
+    <test started-at="2020-06-05T14:11:26 EDT" name="Ordering" finished-at="2020-06-05T14:11:26 EDT" duration-ms="7">
       <class name="testCase.Ordering">
-        <test-method signature="orderItems()[pri:0, instance:testCase.Ordering@31ff43be]" started-at="2020-05-31T03:08:29 EDT" name="orderItems" finished-at="2020-05-31T03:08:29 EDT" duration-ms="2" status="PASS">
+        <test-method signature="orderItems()[pri:0, instance:testCase.Ordering@31ff43be]" started-at="2020-06-05T14:11:26 EDT" name="orderItems" finished-at="2020-06-05T14:11:26 EDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- orderItems -->
       </class> <!-- testCase.Ordering -->
     </test> <!-- Ordering -->
-    <test started-at="2020-05-31T03:08:29 EDT" name="VerifyLogin" finished-at="2020-05-31T03:08:29 EDT" duration-ms="3">
+    <test started-at="2020-06-05T14:11:26 EDT" name="VerifyLogin" finished-at="2020-06-05T14:11:26 EDT" duration-ms="3">
       <class name="testCase.VerifyLoginPage">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-05-31T03:08:21 EDT" name="startDriver" finished-at="2020-05-31T03:08:24 EDT" duration-ms="3045" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-06-05T14:11:17 EDT" name="startDriver" finished-at="2020-06-05T14:11:21 EDT" duration-ms="3610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="verifyLoginPage()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-05-31T03:08:29 EDT" name="verifyLoginPage" finished-at="2020-05-31T03:08:29 EDT" duration-ms="1" status="FAIL">
+        <test-method signature="verifyLoginPage()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-06-05T14:11:26 EDT" name="verifyLoginPage" finished-at="2020-06-05T14:11:26 EDT" duration-ms="1" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Cannot find elements when the XPath is null.]]>
@@ -221,17 +230,14 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.IllegalArgumentException -->
           <reporter-output>
             <line>
-              <![CDATA[Login Test Complete]]>
+              <![CDATA[Test is Complete]]>
             </line>
             <line>
-              <![CDATA[<a target="_blank" href="TestUtil.screenshotName""">Screen Shot</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
+              <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyLoginPage -->
-        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-05-31T03:08:29 EDT" name="endDriver" finished-at="2020-05-31T03:08:29 EDT" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-06-05T14:11:26 EDT" name="endDriver" finished-at="2020-06-05T14:11:26 EDT" duration-ms="97" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endDriver -->
