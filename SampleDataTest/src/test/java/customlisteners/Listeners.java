@@ -1,24 +1,75 @@
 package customlisteners;
 
+import java.io.IOException;
+
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
 
+import com.relevantcodes.extentreports.LogStatus;
+
+import base.TestBase;
 import utilities.TestUtil;
 
-public class Listeners implements ITestListener {
+public class Listeners extends TestBase implements ITestListener {
 
 
 
-public void onTestFailure(ITestResult arg0)
+
+	public void onTestStart(ITestResult arg0)
+	{
+		test=reports.startTest(arg0.getName().toUpperCase());
+	}
+	
+	
+	
+	
+	public void onTestFailure(ITestResult arg0)
 {
 	System.setProperty("org.uncommons.reportng.escape-output","false");
-	
-	Reporter.log("Test is Complete");
-	Reporter.log("<a href=TestUtil.screenshotName>Screen Shot</a>");
+	Reporter.log("Test Failed,refer to Screen Shot");
+	//Reporter.log("<a target=\"_blank\" href=\"/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png\">ScreenShot Caputured</a>");
 	//Reporter.log("<br>");
+	//Reporter.log("<a target=\"_blank\" href=\"/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png\"><img src=\"/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png\" height=200 width=200></img></a>");
 	
+
+try {
+	TestUtil.captureScreenshot();
+} catch (IOException e) {
+	// TODO Auto-generated catch block
+	e.printStackTrace();
 }
+
+test.log(LogStatus.FAIL,arg0.getName().toUpperCase()+"Test Failed :"+arg0.getThrowable());
+test.log(LogStatus.FAIL,test.addScreenCapture(TestUtil.screenshotName));
+
+reports.flush();
+reports.endTest(test);
+
+Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+">ScreenShot Caputured</a>");
+Reporter.log("<br>");
+Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img src="+TestUtil.screenshotName+" height=200 width=200></img></a>");
+
+
+
+
+
+
+}
+
+public void onTestSuccess(ITestResult arg0)
+
+{
+	
+test.log(LogStatus.PASS,arg0.getName().toUpperCase()+"Pass");
+reports.endTest(test);
+reports.flush();
+
+
+
+}
+
+
 
 
 

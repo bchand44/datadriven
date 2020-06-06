@@ -2,6 +2,8 @@ package testCase;
 
 import java.io.IOException;
 
+import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -17,14 +19,9 @@ public class Login extends TestBase {
 public void loginUser() throws IOException, InterruptedException
 {
 	
-	
-	System.setProperty("org.uncommons.reportng.escape-output","false");
-	System.out.println("Login Complete");
-    log.info("Starting Login");
-	Reporter.log("Login Completed");
-	Reporter.log("<a target=\"_blank\" href=\"/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png\">ScreenShot Caputured</a>");
-	Reporter.log("<br>");
-	Reporter.log("<a target=\"_blank\" href=\"/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png\"><img src=\"/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png\" height=200 width=200></img></a>");
+log.info("Starting login Page");
+driver.findElement(By.xpath(or.getProperty("signIn"))).click();
+driver.findElement(By.xpath(or.getProperty("provideEmail"))).sendKeys("abc@aaa.com");
 	
 	
 }
