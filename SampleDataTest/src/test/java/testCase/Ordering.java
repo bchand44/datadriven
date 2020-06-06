@@ -14,7 +14,7 @@ public class Ordering extends TestBase{
 public void orderItems()
 {
 	System.out.println("Order Started");
-	log.debug("order completed");
+	
 }
 
 }

@@ -4,9 +4,9 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="0.001">
+           time="0.006">
   <properties />
-            <testcase name="verifyLoginPage" time="0.001" classname="testCase.VerifyLoginPage">
+            <testcase name="verifyLoginPage" time="0.006" classname="testCase.VerifyLoginPage">
                 <failure type="java.lang.IllegalArgumentException"
                   message="Cannot find elements when the XPath is null."
               >

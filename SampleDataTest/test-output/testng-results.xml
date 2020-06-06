@@ -1,202 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Test is Complete]]>
-    </line>
-    <line>
-      <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
-    </line>
-    <line>
-      <![CDATA[Test is Complete]]>
-    </line>
-    <line>
-      <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
-    </line>
-    <line>
-      <![CDATA[Login Completed]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png">ScreenShot Caputured</a>]]>
-    </line>
-    <line>
-      <![CDATA[<br>]]>
-    </line>
-    <line>
-      <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png"><img src="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png" height=200 width=200></img></a>]]>
-    </line>
-    <line>
-      <![CDATA[Test is Complete]]>
-    </line>
-    <line>
-      <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
-    </line>
   </reporter-output>
-  <suite started-at="2020-06-05T14:11:21 EDT" name="Sample Data Test" finished-at="2020-06-05T14:11:26 EDT" duration-ms="5172">
+  <suite started-at="2020-06-06T16:45:05 EDT" name="Default suite" finished-at="2020-06-06T16:45:06 EDT" duration-ms="1055">
     <groups>
     </groups>
-    <test started-at="2020-06-05T14:11:21 EDT" name="Registration" finished-at="2020-06-05T14:11:21 EDT" duration-ms="74">
-      <class name="testCase.Registration">
-        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4671115f]" started-at="2020-06-05T14:11:21 EDT" name="registerUser" data-provider="getData" finished-at="2020-06-05T14:11:21 EDT" duration-ms="9" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{zipCode=11111.0, lastName=Chand, firstName=Birendra, emailAddress=abctest@test.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.By$ByXPath.<init>(By.java:339)
-at org.openqa.selenium.By.xpath(By.java:92)
-at testCase.Registration.registerUser(Registration.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test is Complete]]>
-            </line>
-            <line>
-              <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- registerUser -->
-        <test-method signature="registerUser(java.util.Hashtable)[pri:0, instance:testCase.Registration@4671115f]" started-at="2020-06-05T14:11:21 EDT" name="registerUser" data-provider="getData" finished-at="2020-06-05T14:11:21 EDT" duration-ms="4" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{zipCode=22222.0, lastName=Chand, firstName=Bivek, emailAddress=helo@test.com}]]>
-              </value>
-            </param>
-          </params>
-          <exception class="java.lang.IllegalArgumentException">
-            <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.By$ByXPath.<init>(By.java:339)
-at org.openqa.selenium.By.xpath(By.java:92)
-at testCase.Registration.registerUser(Registration.java:19)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-at org.testng.TestRunner.privateRun(TestRunner.java:766)
-at org.testng.TestRunner.run(TestRunner.java:587)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-at org.testng.TestNG.runSuites(TestNG.java:1039)
-at org.testng.TestNG.run(TestNG.java:1007)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
-          <reporter-output>
-            <line>
-              <![CDATA[Test is Complete]]>
-            </line>
-            <line>
-              <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- registerUser -->
-      </class> <!-- testCase.Registration -->
-    </test> <!-- Registration -->
-    <test started-at="2020-06-05T14:11:26 EDT" name="Login" finished-at="2020-06-05T14:11:26 EDT" duration-ms="11">
+    <test started-at="2020-06-06T16:45:05 EDT" name="Default test" finished-at="2020-06-06T16:45:06 EDT" duration-ms="1055">
       <class name="testCase.Login">
-        <test-method signature="loginUser()[pri:0, instance:testCase.Login@172b013]" started-at="2020-06-05T14:11:26 EDT" name="loginUser" finished-at="2020-06-05T14:11:26 EDT" duration-ms="4" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Login Completed]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png">ScreenShot Caputured</a>]]>
-            </line>
-            <line>
-              <![CDATA[<br>]]>
-            </line>
-            <line>
-              <![CDATA[<a target="_blank" href="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png"><img src="/Users/birendra/git/datadriven/SampleDataTest/test-output/html/a.png" height=200 width=200></img></a>]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- loginUser -->
-      </class> <!-- testCase.Login -->
-    </test> <!-- Login -->
-    <test started-at="2020-06-05T14:11:26 EDT" name="Ordering" finished-at="2020-06-05T14:11:26 EDT" duration-ms="7">
-      <class name="testCase.Ordering">
-        <test-method signature="orderItems()[pri:0, instance:testCase.Ordering@31ff43be]" started-at="2020-06-05T14:11:26 EDT" name="orderItems" finished-at="2020-06-05T14:11:26 EDT" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- orderItems -->
-      </class> <!-- testCase.Ordering -->
-    </test> <!-- Ordering -->
-    <test started-at="2020-06-05T14:11:26 EDT" name="VerifyLogin" finished-at="2020-06-05T14:11:26 EDT" duration-ms="3">
-      <class name="testCase.VerifyLoginPage">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-06-05T14:11:17 EDT" name="startDriver" finished-at="2020-06-05T14:11:21 EDT" duration-ms="3610" status="PASS">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.Login@14fa86ae]" started-at="2020-06-06T16:45:02 EDT" name="startDriver" finished-at="2020-06-06T16:45:05 EDT" duration-ms="3036" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="verifyLoginPage()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-06-05T14:11:26 EDT" name="verifyLoginPage" finished-at="2020-06-05T14:11:26 EDT" duration-ms="1" status="FAIL">
-          <exception class="java.lang.IllegalArgumentException">
+        <test-method signature="loginUser()[pri:0, instance:testCase.Login@14fa86ae]" started-at="2020-06-06T16:45:05 EDT" name="loginUser" finished-at="2020-06-06T16:45:06 EDT" duration-ms="1033" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
-              <![CDATA[Cannot find elements when the XPath is null.]]>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div/div[2]/div/div[3]/div/div[2]/div[2]/form/div/div[1]/input"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'birendras-MacBook-Air.local', ip: '2601:586:8003:8830:0:0:0:7648%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/sh/rcszxc6115b...}, goog:chromeOptions: {debuggerAddress: localhost:65307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a0977f9f65d8f62025441858dd3e4cbc
+*** Element info: {Using=xpath, value=//div/div[2]/div/div[3]/div/div[2]/div[2]/form/div/div[1]/input}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-at org.openqa.selenium.By$ByXPath.<init>(By.java:339)
-at org.openqa.selenium.By.xpath(By.java:92)
-at testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:18)
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div/div[2]/div/div[3]/div/div[2]/div[2]/form/div/div[1]/input"}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'birendras-MacBook-Air.local', ip: '2601:586:8003:8830:0:0:0:7648%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.5', java.version: '14.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/sh/rcszxc6115b...}, goog:chromeOptions: {debuggerAddress: localhost:65307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: a0977f9f65d8f62025441858dd3e4cbc
+*** Element info: {Using=xpath, value=//div/div[2]/div/div[3]/div/div[2]/div[2]/form/div/div[1]/input}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at testCase.Login.loginUser(Login.java:24)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -227,21 +80,15 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
-            <line>
-              <![CDATA[Test is Complete]]>
-            </line>
-            <line>
-              <![CDATA[<a href=TestUtil.screenshotName>Screen Shot</a>]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- verifyLoginPage -->
-        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.VerifyLoginPage@6cc558c6]" started-at="2020-06-05T14:11:26 EDT" name="endDriver" finished-at="2020-06-05T14:11:26 EDT" duration-ms="97" status="PASS">
+        </test-method> <!-- loginUser -->
+        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.Login@14fa86ae]" started-at="2020-06-06T16:45:11 EDT" name="endDriver" finished-at="2020-06-06T16:45:11 EDT" duration-ms="103" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endDriver -->
-      </class> <!-- testCase.VerifyLoginPage -->
-    </test> <!-- VerifyLogin -->
-  </suite> <!-- Sample Data Test -->
+      </class> <!-- testCase.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

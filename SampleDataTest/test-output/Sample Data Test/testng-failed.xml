@@ -6,17 +6,6 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="customlisteners.Listeners"/>
   </listeners>
-  <test thread-count="5" name="Registration(failed)">
-    <classes>
-      <class name="testCase.Registration">
-        <methods>
-          <include name="startDriver"/>
-          <include name="endDriver"/>
-          <include name="registerUser" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- testCase.Registration -->
-    </classes>
-  </test> <!-- Registration(failed) -->
   <test thread-count="5" name="VerifyLogin(failed)">
     <classes>
       <class name="testCase.VerifyLoginPage">
