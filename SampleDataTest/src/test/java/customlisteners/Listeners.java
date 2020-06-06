@@ -14,9 +14,9 @@ public void onTestFailure(ITestResult arg0)
 {
 	System.setProperty("org.uncommons.reportng.escape-output","false");
 	
-	Reporter.log("Login Test Complete");
-	Reporter.log("<a target=\"_blank\" href=\"TestUtil.screenshotName\">Screen Shot</a>");
-	Reporter.log("<br>");
+	Reporter.log("Test is Complete");
+	Reporter.log("<a href=TestUtil.screenshotName>Screen Shot</a>");
+	//Reporter.log("<br>");
 	
 }
 
