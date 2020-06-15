@@ -12,6 +12,8 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
@@ -22,6 +24,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.ExcelReader;
 import utilities.ExtentManager;
+import utilities.TestUtil;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -124,6 +127,37 @@ public class TestBase {
 		
 	
 	}
+	
+	
+	public static void softAssertion(String expected,String actual) throws IOException
+	{
+		try 
+		{ 
+			Assert.assertEquals(expected,actual);
+			
+		} catch(Throwable t)
+		{
+			TestUtil.captureScreenshot();
+			
+			//ReportNG Reports 
+			
+			Reporter.log("<br>"+"Soft Assertion failed, moving on with Test"+t.getMessage()+"<br>");
+			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img src="+TestUtil.screenshotName+" height=200 width=200></img></a>");
+		    Reporter.log("<br>");
+		    Reporter.log("<br>");
+		  
+			//Extend Reports
+		    
+		    test.log(LogStatus.FAIL,"Soft Verififcation Failed,moving on with Test"+t.getMessage());
+		    test.log(LogStatus.FAIL,test.addScreenCapture(TestUtil.screenshotName));
+		
+		
+		}
+	}
+	
+	
+	
+	
 	
 	
 	public boolean isElementPresent(By by)
