@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="testCase.Login" class="method navigator-link" hash-for-method="loginUser">loginUser</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="testCase.Login" class="method navigator-link" hash-for-method="login({passWord=bbbbb, userName=bbb@bbb.com})">login({passWord=bbbbb, userName=bbb@bbb.com})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -125,34 +125,13 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="loginUser">
-                  </a> <!-- loginUser -->
-                  <span class="method-name">loginUser</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/div[2]/div/div[3]/div/div[2]/div[2]/form/div/div[1]/input&quot;}
-  (Session info: chrome=83.0.4103.97)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;birendras-MacBook-Air.local&apos;, ip: &apos;2601:586:8003:8830:0:0:0:7648%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;14.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/sh/rcszxc6115b...}, goog:chromeOptions: {debuggerAddress: localhost:65307}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: a0977f9f65d8f62025441858dd3e4cbc
-*** Element info: {Using=xpath, value=//div/div[2]/div/div[3]/div/div[2]/div[2]/form/div/div[1]/input}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at testCase.Login.loginUser(Login.java:24)
+                  <a name="login({passWord=bbbbb, userName=bbb@bbb.com})">
+                  </a> <!-- login({passWord=bbbbb, userName=bbb@bbb.com}) -->
+                  <span class="method-name">login</span>
+                  <span class="parameters">({passWord=bbbbb, userName=bbb@bbb.com})</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at base.TestBase.click(TestBase.java:79)
+	at testCase.Login.login(Login.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -190,7 +169,7 @@ Session ID: a0977f9f65d8f62025441858dd3e4cbc
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/private/var/folders/sh/rcszxc6115bf39c9w8lpj95h0000gn/T/testng-eclipse--1833020215/testng-customsuite.xml</span>
+            <span class="header-content">/private/var/folders/sh/rcszxc6115bf39c9w8lpj95h0000gn/T/testng-eclipse-1283777133/testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -199,11 +178,7 @@ Session ID: a0977f9f65d8f62025441858dd3e4cbc
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCase.Login&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;loginUser&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- testCase.Login --&gt;
+      &lt;class name=&quot;testCase.Login&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -245,9 +220,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'loginUser')
+data.setCell(0, 1, 'login')
 data.setCell(0, 2, 'testCase.Login')
-data.setCell(0, 3, 1033);
+data.setCell(0, 3, 1141);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
@@ -286,12 +261,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">loginUser</span>
-                <span class="method-start">3052 ms</span>
+                <span class="method-name">login({passWord=bbbbb, userName=bbb@bbb.com})</span>
+                <span class="method-start">3336 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">endDriver</span>
-                <span class="method-start">9128 ms</span>
+                <span class="method-start">4504 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

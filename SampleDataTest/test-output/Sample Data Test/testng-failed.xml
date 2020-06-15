@@ -6,15 +6,26 @@
     <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     <listener class-name="customlisteners.Listeners"/>
   </listeners>
-  <test thread-count="5" name="VerifyLogin(failed)">
+  <test thread-count="5" parallel="classes" name="Registration(failed)">
     <classes>
-      <class name="testCase.VerifyLoginPage">
+      <class name="testCase.Registration">
         <methods>
           <include name="startDriver"/>
-          <include name="verifyLoginPage"/>
+          <include name="endDriver"/>
+          <include name="registerUser"/>
+        </methods>
+      </class> <!-- testCase.Registration -->
+    </classes>
+  </test> <!-- Registration(failed) -->
+  <test thread-count="5" name="Login(failed)">
+    <classes>
+      <class name="testCase.Login">
+        <methods>
+          <include name="startDriver"/>
+          <include name="login" invocation-numbers="0"/>
           <include name="endDriver"/>
         </methods>
-      </class> <!-- testCase.VerifyLoginPage -->
+      </class> <!-- testCase.Login -->
     </classes>
-  </test> <!-- VerifyLogin(failed) -->
+  </test> <!-- Login(failed) -->
 </suite> <!-- Failed suite [Sample Data Test] -->

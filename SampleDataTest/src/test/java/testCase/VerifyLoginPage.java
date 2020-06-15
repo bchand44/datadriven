@@ -2,6 +2,10 @@ package testCase;
 
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -13,10 +17,11 @@ public class VerifyLoginPage extends TestBase{
 
 @Test
 
-public void verifyLoginPage()
+public void verifyLoginPage() throws InterruptedException
 {
-	driver.findElement(By.xpath(or.getProperty("clickSignIn"))).click();
-	Assert.assertTrue(isElementPresent(By.xpath(or.getProperty("verifySignIn"))),"Sign in not found");
+	click("signIn_xpath");
+	
+	Assert.assertTrue(isElementPresent(By.xpath(or.getProperty("verifySignIn_xpath"))),"Sign in not found");
 }
 
 

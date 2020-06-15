@@ -1,5 +1,12 @@
-signIn=//div/div[1]/header/div[2]/div/div/nav/div[1]/a
-verifySignIn=//div/div[2]/div/div[3]/div/div/div[2]/form/div/p[2]/button/span
-emailAddress=email_create
-createAccount=SubmitCreate
-provideEmail=//div/div[2]/div/div[3]/div/div[2]/div[2]/form/div/div[1]/input
+signIn_xpath=//div/div[1]/header/div[2]/div/div/nav/div[1]/a
+verifySignIn_xpath=//div/div[2]/div/div[3]/div/div/div[2]/form/div/p[2]/button/span
+emailAddress_name=email_create
+createAccount_name=SubmitCreate
+newEmail_xpath=//div/div[2]/div/div[3]/div/div/div[1]/form/div/div[2]/input
+existingEmail_xpath=//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input
+verifyRegistration_xpath=//*[@id="noSlide"]/h1
+password_id=passwd
+login_xpath=//div/div[2]/div/div[3]/div/div/div[2]/form/div/p[2]/button/span
+
+
+

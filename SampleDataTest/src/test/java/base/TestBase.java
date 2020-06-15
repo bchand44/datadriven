@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.ExcelReader;
 import utilities.ExtentManager;
@@ -66,6 +67,62 @@ public class TestBase {
 	    driver.get(config.getProperty("testurl"));
 		driver.manage().window().maximize();
 	}
+	}
+	
+	
+	public void click(String locator) throws InterruptedException
+	{
+		
+		if(locator.endsWith("xpath"))
+		{
+			driver.findElement(By.xpath(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		else if(locator.endsWith("_id"))
+		{
+			driver.findElement(By.id(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		
+		else if(locator.endsWith("_name"))
+		{
+			driver.findElement(By.name(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		else if(locator.endsWith("_css"))
+		{
+			driver.findElement(By.cssSelector(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		
+	}
+	
+	public void type(String locator,String value)
+	{
+		
+		if(locator.endsWith("xpath"))
+		{
+			driver.findElement(By.xpath(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		else if(locator.endsWith("_id"))
+		{
+			driver.findElement(By.id(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		
+		else if(locator.endsWith("_name"))
+		{
+			driver.findElement(By.name(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		else if(locator.endsWith("_css"))
+		{
+			driver.findElement(By.cssSelector(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		
+	
 	}
 	
 	

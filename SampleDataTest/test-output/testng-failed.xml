@@ -6,8 +6,8 @@
       <class name="testCase.Login">
         <methods>
           <include name="startDriver"/>
+          <include name="login" invocation-numbers="0"/>
           <include name="endDriver"/>
-          <include name="loginUser"/>
         </methods>
       </class> <!-- testCase.Login -->
     </classes>
