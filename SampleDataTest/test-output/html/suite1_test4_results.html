@@ -12,7 +12,7 @@
 <body>
 <h1>VerifyLogin</h1>
 <p>
-  Test duration: 3.290s
+  Test duration: 1.822s
 </p>
 
 
@@ -28,24 +28,29 @@
                   verifyLoginPage
       </td>
   <td class="duration">
-    0.001s
+    1.822s
   </td>
   <td class="result">
         
     
             <div class="testOutput">
-                        Test Failed
-                                <a target="_blank" href=null>ScreenShot Caputured</a>
+                        <br>Soft Assertion failed, moving on with Testexpected [dac] but found [abc]<br>
+                                <a target="_blank" href=Tue_Jun_16_15_25_23_EDT_2020.jpg><img src=Tue_Jun_16_15_25_23_EDT_2020.jpg height=200 width=200></img></a>
                                 <br>
-                                <a target="_blank" href=null><img src=null height=200 width=200></img></a>
+                                <br>
+                                Test Failed,refer to Screen Shot
+                                <a target="_blank" href=Tue_Jun_16_15_25_25_EDT_2020.jpg>ScreenShot Caputured</a>
+                                <br>
+                                <a target="_blank" href=Tue_Jun_16_15_25_25_EDT_2020.jpg><img src=Tue_Jun_16_15_25_25_EDT_2020.jpg height=200 width=200></img></a>
                   </div>
     
 
-        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.</b></a><br />
+        <a href="javascript:toggleElement('exception-0', 'block')" title="Click to expand/collapse"><b>java.lang.AssertionError: Sign in not found expected [true] but found [false]</b></a><br />
     <div class="stackTrace" id="exception-0">
-              org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)<br />
-              org.openqa.selenium.By.xpath(By.java:92)<br />
-              testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:18)<br />
+              org.testng.Assert.fail(Assert.java:97)<br />
+              org.testng.Assert.failNotEquals(Assert.java:969)<br />
+              org.testng.Assert.assertTrue(Assert.java:43)<br />
+              testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:28)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)<br />
               java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)<br />
               java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)<br />

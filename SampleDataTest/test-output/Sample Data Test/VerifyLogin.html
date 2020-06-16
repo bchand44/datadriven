@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 06 15:27:26 EDT 2020</td>
+<td>Started on:</td><td>Tue Jun 16 15:25:22 EDT 2020</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (29 ms)</td>
+<tr><td>Total time:</td><td>2 seconds (2338 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,27 +75,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCase.VerifyLoginPage.verifyLoginPage()'><b>verifyLoginPage</b><br>Test class: testCase.VerifyLoginPage<br/>
-<a href="#Output-1002911155" onClick='toggleBox("Output-1002911155", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCase.Ordering.orderItems()'><b>orderItems</b><br>Test class: testCase.Ordering<br/>
+<a href="#Output-1793325972" onClick='toggleBox("Output-1793325972", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1002911155" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1002911155">
-Test Failed<br/>
-<a target="_blank" href=null>ScreenShot Caputured</a><br/>
+<a href="#Output-1793325972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1793325972">
+Test Failed,refer to Screen Shot<br/>
+<a target="_blank" href=Tue_Jun_16_15_25_17_EDT_2020.jpg>ScreenShot Caputured</a><br/>
 <br><br/>
-<a target="_blank" href=null><img src=null height=200 width=200></img></a><br/>
+<a target="_blank" href=Tue_Jun_16_15_25_17_EDT_2020.jpg><img src=Tue_Jun_16_15_25_17_EDT_2020.jpg height=200 width=200></img></a><br/>
 </div>
 </td>
-<td><div><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
-	at org.openqa.selenium.By.xpath(By.java:92)
-	at testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:18)
+<td><div><pre>java.lang.AssertionError: Failing the Test
+	at testCase.Ordering.orderItems(Ordering.java:24)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1002911155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1002911155'><pre>java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-	at org.openqa.selenium.By$ByXPath.&lt;init&gt;(By.java:339)
-	at org.openqa.selenium.By.xpath(By.java:92)
-	at testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:18)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1793325972", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1793325972'><pre>java.lang.AssertionError: Failing the Test
+	at org.testng.Assert.fail(Assert.java:97)
+	at testCase.Ordering.orderItems(Ordering.java:24)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -125,8 +122,77 @@ Test Failed<br/>
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testCase.VerifyLoginPage@432038ec</td></tr>
+<td>6</td>
+<td>testCase.Ordering@1852a3ff</td></tr>
+<tr>
+<td title='testCase.VerifyLoginPage.verifyLoginPage()'><b>verifyLoginPage</b><br>Test class: testCase.VerifyLoginPage<br/>
+<a href="#Output-1167916234" onClick='toggleBox("Output-1167916234", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1167916234" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1167916234">
+<br>Soft Assertion failed, moving on with Testexpected [dac] but found [abc]<br><br/>
+<a target="_blank" href=Tue_Jun_16_15_25_23_EDT_2020.jpg><img src=Tue_Jun_16_15_25_23_EDT_2020.jpg height=200 width=200></img></a><br/>
+<br><br/>
+<br><br/>
+Test Failed,refer to Screen Shot<br/>
+<a target="_blank" href=Tue_Jun_16_15_25_25_EDT_2020.jpg>ScreenShot Caputured</a><br/>
+<br><br/>
+<a target="_blank" href=Tue_Jun_16_15_25_25_EDT_2020.jpg><img src=Tue_Jun_16_15_25_25_EDT_2020.jpg height=200 width=200></img></a><br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Sign in not found expected [true] but found [false]
+	at testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1167916234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1167916234'><pre>java.lang.AssertionError: Sign in not found expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:28)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>1</td>
+<td>testCase.VerifyLoginPage@623e088f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCase.Login.login()'><b>login</b><br>Test class: testCase.Login<br>Parameters: {passWord=bbbbb, userName=bbb@bbb.com}</td>
+<td></td>
+<td>8</td>
+<td>testCase.Login@635572a7</td></tr>
 </table><p>
 </body>
 </html>

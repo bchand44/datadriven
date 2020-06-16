@@ -10,7 +10,7 @@
 
 
 </listeners>
-  <test thread-count="5" name="Registration">
+  <test thread-count="5" parallel="classes" name="Registration">
     <classes>
       <class name="testCase.Registration"/>
       
@@ -35,5 +35,11 @@
       
       <class name="testCase.VerifyLoginPage"/>
     </classes>
-  </test> <!-- Test -->
+    </test> <!-- Test -->
+    <test thread-count="5" name="parameter">
+    <classes>
+      
+      <class name="testCase.Parameter"/>
+    </classes>
+    </test> <!-- Test -->
 </suite> <!-- Suite -->

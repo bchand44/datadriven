@@ -4,16 +4,17 @@
            failures="1"
            errors="0"
            skipped="0"
-           time="0.006">
+           time="1.822">
   <properties />
-            <testcase name="verifyLoginPage" time="0.006" classname="testCase.VerifyLoginPage">
-                <failure type="java.lang.IllegalArgumentException"
-                  message="Cannot find elements when the XPath is null."
+            <testcase name="verifyLoginPage" time="1.822" classname="testCase.VerifyLoginPage">
+                <failure type="java.lang.AssertionError"
+                  message="Sign in not found expected [true] but found [false]"
               >
-<![CDATA[java.lang.IllegalArgumentException: Cannot find elements when the XPath is null.
-  org.openqa.selenium.By$ByXPath.<init>(By.java:339)
-  org.openqa.selenium.By.xpath(By.java:92)
-  testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:18)
+<![CDATA[java.lang.AssertionError: Sign in not found expected [true] but found [false]
+  org.testng.Assert.fail(Assert.java:97)
+  org.testng.Assert.failNotEquals(Assert.java:969)
+  org.testng.Assert.assertTrue(Assert.java:43)
+  testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:28)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
   java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
   java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

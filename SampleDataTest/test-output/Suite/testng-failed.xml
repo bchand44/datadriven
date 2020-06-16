@@ -1,22 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Registration(failed)">
     <classes>
       <class name="testCase.Registration">
         <methods>
           <include name="startDriver"/>
           <include name="endDriver"/>
-          <include name="registerUser"/>
+          <include name="registerUser" invocation-numbers="0"/>
         </methods>
       </class> <!-- testCase.Registration -->
-      <class name="testCase.Ordering">
-        <methods>
-          <include name="orderItems"/>
-          <include name="startDriver"/>
-          <include name="endDriver"/>
-        </methods>
-      </class> <!-- testCase.Ordering -->
+    </classes>
+  </test> <!-- Registration(failed) -->
+  <test thread-count="5" parallel="classes" name="Login(failed)">
+    <classes>
       <class name="testCase.Login">
         <methods>
           <include name="startDriver"/>
@@ -25,5 +22,16 @@
         </methods>
       </class> <!-- testCase.Login -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Login(failed) -->
+  <test thread-count="5" parallel="classes" name="verifyLogin(failed)">
+    <classes>
+      <class name="testCase.VerifyLoginPage">
+        <methods>
+          <include name="startDriver"/>
+          <include name="verifyLoginPage"/>
+          <include name="endDriver"/>
+        </methods>
+      </class> <!-- testCase.VerifyLoginPage -->
+    </classes>
+  </test> <!-- verifyLogin(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -12,15 +12,19 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.safari.SafariDriver;
+import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
+import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.ExcelReader;
 import utilities.ExtentManager;
+import utilities.TestUtil;
 
 import org.testng.annotations.Test;
 import org.testng.annotations.Test;
@@ -67,6 +71,93 @@ public class TestBase {
 		driver.manage().window().maximize();
 	}
 	}
+	
+	
+	public void click(String locator) throws InterruptedException
+	{
+		
+		if(locator.endsWith("xpath"))
+		{
+			driver.findElement(By.xpath(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		else if(locator.endsWith("_id"))
+		{
+			driver.findElement(By.id(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		
+		else if(locator.endsWith("_name"))
+		{
+			driver.findElement(By.name(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		else if(locator.endsWith("_css"))
+		{
+			driver.findElement(By.cssSelector(or.getProperty(locator))).click();
+			test.log(LogStatus.INFO,"Click on   :"+locator);
+		}
+		
+	}
+	
+	public void type(String locator,String value)
+	{
+		
+		if(locator.endsWith("xpath"))
+		{
+			driver.findElement(By.xpath(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		else if(locator.endsWith("_id"))
+		{
+			driver.findElement(By.id(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		
+		else if(locator.endsWith("_name"))
+		{
+			driver.findElement(By.name(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		else if(locator.endsWith("_css"))
+		{
+			driver.findElement(By.cssSelector(or.getProperty(locator))).sendKeys(value);
+			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+		}
+		
+	
+	}
+	
+	
+	public static void softAssertion(String expected,String actual) throws IOException
+	{
+		try 
+		{ 
+			Assert.assertEquals(expected,actual);
+			
+		} catch(Throwable t)
+		{
+			TestUtil.captureScreenshot();
+			
+			//ReportNG Reports 
+			
+			Reporter.log("<br>"+"Soft Assertion failed, moving on with Test"+t.getMessage()+"<br>");
+			Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img src="+TestUtil.screenshotName+" height=200 width=200></img></a>");
+		    Reporter.log("<br>");
+		    Reporter.log("<br>");
+		  
+			//Extend Reports
+		    
+		    test.log(LogStatus.FAIL,"Soft Verififcation Failed,moving on with Test"+t.getMessage());
+		    test.log(LogStatus.FAIL,test.addScreenCapture(TestUtil.screenshotName));
+		
+		
+		}
+	}
+	
+	
+	
+	
 	
 	
 	public boolean isElementPresent(By by)
