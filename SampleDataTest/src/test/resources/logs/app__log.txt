@@ -1,3 +1,3 @@
-INFO    2020-06-15 15:01:57,216 [main] Adding Log  - Config File is loaded
-INFO    2020-06-15 15:01:57,217 [main] Adding Log  - OR File is loaded
-INFO    2020-06-15 15:02:13,552 [main] Adding Log  - driver is closed
+INFO    2020-06-16 15:58:29,327 [main] Adding Log  - Config File is loaded
+INFO    2020-06-16 15:58:29,327 [main] Adding Log  - OR File is loaded
+INFO    2020-06-16 15:59:00,319 [main] Adding Log  - driver is closed

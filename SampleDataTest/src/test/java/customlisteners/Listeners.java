@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.Reporter;
+import org.testng.SkipException;
 
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -19,6 +20,9 @@ public class Listeners extends TestBase implements ITestListener {
 	public void onTestStart(ITestResult arg0)
 	{
 		test=reports.startTest(arg0.getName().toUpperCase());
+		
+		//setup run mode
+		
 	}
 	
 	
@@ -43,8 +47,9 @@ try {
 test.log(LogStatus.FAIL,arg0.getName().toUpperCase()+"Test Failed :"+arg0.getThrowable());
 test.log(LogStatus.FAIL,test.addScreenCapture(TestUtil.screenshotName));
 
-reports.flush();
 reports.endTest(test);
+reports.flush();
+
 
 Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+">ScreenShot Caputured</a>");
 Reporter.log("<br>");
@@ -57,6 +62,16 @@ Reporter.log("<a target=\"_blank\" href="+TestUtil.screenshotName+"><img src="+T
 
 }
 
+public void onTestSkipped(ITestResult arg0)
+{
+	test.log(LogStatus.SKIP, arg0.getName().toUpperCase()+"Skipped the test as Runmode is No");
+	reports.endTest(test);
+	reports.flush();
+}
+	
+	
+	
+	
 public void onTestSuccess(ITestResult arg0)
 
 {

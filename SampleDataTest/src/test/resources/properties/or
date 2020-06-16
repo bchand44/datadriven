@@ -7,6 +7,7 @@ existingEmail_xpath=//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input
 verifyRegistration_xpath=//*[@id="noSlide"]/h1
 password_id=passwd
 login_xpath=//div/div[2]/div/div[3]/div/div/div[2]/form/div/p[2]/button/span
+signOut_xpath=//div/div[1]/header/div[2]/div/div/nav/div[2]/a
 
 
 
