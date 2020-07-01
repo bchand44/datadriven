@@ -8,11 +8,97 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">1,048</td><td></td><td></td></tr>
+<tr><th colspan="8">Sample Data Test</th></tr>
+<tr><td><a href="#t0">Registration</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">10</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">Login</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,363</td><td></td><td></td></tr>
+<tr><td><a href="#t2">Ordering</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">7,338</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t3">VerifyLogin</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,338</td><td></td><td></td></tr>
+<tr><td><a href="#t4">parameter</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">3,429</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">1</th><th class="num">0</th><th class="num">0</th><th class="num attn">5</th><th class="num">21,478</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">experiment.DataPovider</td><td><a href="#m0">random</a></td><td rowspan="1">1593643175641</td><td rowspan="1">4</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Sample Data Test</th></tr></tbody><tbody id="t0"><tr><th colspan="4" class="invisible"/></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCase.Login</td><td><a href="#m0">login</a></td><td rowspan="1">1592335497140</td><td rowspan="1">8177</td></tr></tbody>
+<tbody id="t2"><tr><th colspan="4">Ordering &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCase.Ordering</td><td><a href="#m1">orderItems</a></td><td rowspan="1">1592335510507</td><td rowspan="1">6745</td></tr></tbody>
+<tbody id="t3"><tr><th colspan="4">VerifyLogin &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCase.VerifyLoginPage</td><td><a href="#m2">verifyLoginPage</a></td><td rowspan="1">1592335522873</td><td rowspan="1">1822</td></tr></tbody>
+<tbody id="t4"><tr><th colspan="4">parameter &#8212; failed</th></tr><tr class="failedeven"><td rowspan="3">testCase.Parameter</td><td><a href="#m3">parameter</a></td><td rowspan="3">1592335526499</td><td rowspan="3">544</td></tr><tr class="failedeven"><td><a href="#m4">parameter</a></td></tr><tr class="failedeven"><td><a href="#m5">parameter</a></td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">experiment.DataPovider#random</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{firstName=jfqn@test.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Registration</h2><h2>Login</h2><h3 id="m0">testCase.Login#login</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{passWord=bbbbb, userName=bbb@bbb.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Ordering</h2><h3 id="m1">testCase.Ordering#orderItems</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Failed,refer to Screen Shot<br/><a target="_blank" href=Tue_Jun_16_15_25_17_EDT_2020.jpg>ScreenShot Caputured</a><br/><br><br/><a target="_blank" href=Tue_Jun_16_15_25_17_EDT_2020.jpg><img src=Tue_Jun_16_15_25_17_EDT_2020.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failing the Test
+	at testCase.Ordering.orderItems(Ordering.java:24)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>VerifyLogin</h2><h3 id="m2">testCase.VerifyLoginPage#verifyLoginPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages"><br>Soft Assertion failed, moving on with Testexpected [dac] but found [abc]<br><br/><a target="_blank" href=Tue_Jun_16_15_25_23_EDT_2020.jpg><img src=Tue_Jun_16_15_25_23_EDT_2020.jpg height=200 width=200></img></a><br/><br><br/><br><br/>Test Failed,refer to Screen Shot<br/><a target="_blank" href=Tue_Jun_16_15_25_25_EDT_2020.jpg>ScreenShot Caputured</a><br/><br><br/><a target="_blank" href=Tue_Jun_16_15_25_25_EDT_2020.jpg><img src=Tue_Jun_16_15_25_25_EDT_2020.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Sign in not found expected [true] but found [false]
+	at testCase.VerifyLoginPage.verifyLoginPage(VerifyLoginPage.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>parameter</h2><h3 id="m3">testCase.Parameter#parameter</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{passWord=ccccc, userName=ccc@ccc.com}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Test Failed,refer to Screen Shot<br/><a target="_blank" href=Tue_Jun_16_15_25_27_EDT_2020.jpg>ScreenShot Caputured</a><br/><br><br/><a target="_blank" href=Tue_Jun_16_15_25_27_EDT_2020.jpg><img src=Tue_Jun_16_15_25_27_EDT_2020.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;birendras-MacBook-Air.local&apos;, ip: &apos;2601:586:8003:8830:0:0:0:7648%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;14.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/sh/rcszxc6115b...}, goog:chromeOptions: {debuggerAddress: localhost:49485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e4b4c3216e9e2e9e6321f9f82395398
+*** Element info: {Using=xpath, value=//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at base.TestBase.type(TestBase.java:108)
+	at testCase.Parameter.parameter(Parameter.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCase.Parameter#parameter</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{passWord=eeeee, userName=eee@eee.com}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Test Failed,refer to Screen Shot<br/><a target="_blank" href=Tue_Jun_16_15_25_28_EDT_2020.jpg>ScreenShot Caputured</a><br/><br><br/><a target="_blank" href=Tue_Jun_16_15_25_28_EDT_2020.jpg><img src=Tue_Jun_16_15_25_28_EDT_2020.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;birendras-MacBook-Air.local&apos;, ip: &apos;2601:586:8003:8830:0:0:0:7648%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;14.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/sh/rcszxc6115b...}, goog:chromeOptions: {debuggerAddress: localhost:49485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e4b4c3216e9e2e9e6321f9f82395398
+*** Element info: {Using=xpath, value=//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at base.TestBase.type(TestBase.java:108)
+	at testCase.Parameter.parameter(Parameter.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCase.Parameter#parameter</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{passWord=bbbbb, userName=bbb@bbb.com}</td></tr><tr><th>Messages</th></tr><tr><td><div class="messages">Test Failed,refer to Screen Shot<br/><a target="_blank" href=Tue_Jun_16_15_25_26_EDT_2020.jpg>ScreenShot Caputured</a><br/><br><br/><a target="_blank" href=Tue_Jun_16_15_25_26_EDT_2020.jpg><img src=Tue_Jun_16_15_25_26_EDT_2020.jpg height=200 width=200></img></a></div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input&quot;}
+  (Session info: chrome=83.0.4103.97)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;birendras-MacBook-Air.local&apos;, ip: &apos;2601:586:8003:8830:0:0:0:7648%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.15.5&apos;, java.version: &apos;14.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 83.0.4103.97, chrome: {chromedriverVersion: 83.0.4103.39 (ccbf011cb2d2b..., userDataDir: /var/folders/sh/rcszxc6115b...}, goog:chromeOptions: {debuggerAddress: localhost:49485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 8e4b4c3216e9e2e9e6321f9f82395398
+*** Element info: {Using=xpath, value=//div/div[2]/div/div[3]/div/div/div[2]/form/div/div[1]/input}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at base.TestBase.type(TestBase.java:108)
+	at testCase.Parameter.parameter(Parameter.java:26)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1510)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

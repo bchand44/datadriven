@@ -10,18 +10,9 @@
 
 
 </listeners>
-  
-  
-  
-  
-  
-  
-  
-  
   <test thread-count="5" parallel="classes" name="Registration">
     <classes>
       <class name="testCase.Registration"/>
-      
       
     </classes>
   </test> <!-- Test -->

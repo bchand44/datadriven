@@ -4,18 +4,14 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.safari.SafariDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterSuite;
@@ -44,7 +40,6 @@ public class TestBase {
 	public static ExcelReader excel=new ExcelReader(System.getProperty("user.dir")+"//src//test//resources//excel//testdata.xlsx");
     public ExtentReports reports=ExtentManager.getInstance();
     public static ExtentTest test;
-    public static WebDriverWait wait;
 	
 	
 	
@@ -73,37 +68,16 @@ public class TestBase {
 	    
 	    
 	    driver.get(config.getProperty("testurl"));
-	    driver.manage().window().maximize();
-	    driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
-				TimeUnit.SECONDS);
-		wait = new WebDriverWait(driver, 5);
-		
+		driver.manage().window().maximize();
 	}
 	}
-	
-	
-	public String getText(String locator)
-	{
-		if(locator.endsWith("xpath"))
-		{
-			
-			
-			test.log(LogStatus.INFO,"Text Extracted   :"+locator);
-		}
-		return driver.findElement(By.xpath(or.getProperty(locator))).getText();
-		
-	}
-	
 	
 	
 	public void click(String locator) throws InterruptedException
 	{
 		
-
-		
 		if(locator.endsWith("xpath"))
 		{
-			
 			driver.findElement(By.xpath(or.getProperty(locator))).click();
 			test.log(LogStatus.INFO,"Click on   :"+locator);
 		}
@@ -182,13 +156,7 @@ public class TestBase {
 	}
 	
 	
-	public void elementwait(WebElement locator) {
-
-		WebDriverWait wait = new WebDriverWait(driver,40);
-		
-		wait.until(ExpectedConditions.visibilityOf(locator));
-
-	}
+	
 	
 	
 	
