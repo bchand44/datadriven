@@ -191,6 +191,62 @@ public class ExcelReader {
 	
 	
 	
+	public String setData(String sheetName,String colName,int rowNum, String data){
+		try{
+		fis = new FileInputStream(path); 
+		workbook = new XSSFWorkbook(fis);
+
+		
+		
+		int index = workbook.getSheetIndex(sheetName);
+		int colNum=-1;
+		
+		
+		
+		
+		sheet = workbook.getSheetAt(index);
+		
+
+		row=sheet.getRow(0);
+		for(int i=0;i<row.getLastCellNum();i++){
+			//System.out.println(row.getCell(i).getStringCellValue().trim());
+			if(row.getCell(i).getStringCellValue().trim().equals(colName))
+				colNum=i;
+		}
+		
+
+		sheet.autoSizeColumn(colNum); 
+		row = sheet.getRow(rowNum-1);
+		if (row == null)
+			row = sheet.createRow(rowNum-1);
+		
+		cell = row.getCell(colNum);	
+		if (cell == null)
+	        cell = row.createCell(colNum);
+
+	    
+	    cell.setCellValue(data);
+
+	    fileOut = new FileOutputStream(path);
+
+		workbook.write(fileOut);
+
+	    fileOut.close();	
+
+		}
+		catch(Exception e){
+			e.printStackTrace();
+			
+		}
+		return data;
+	}
+	
+	
+	
+	
+	
+	
+	
 	// returns true if data is set successfully else false
 	public boolean setCellData(String sheetName,String colName,int rowNum, String data){
 		try{
