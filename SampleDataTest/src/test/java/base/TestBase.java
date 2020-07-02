@@ -106,22 +106,26 @@ public class TestBase {
 			
 			driver.findElement(By.xpath(or.getProperty(locator))).click();
 			test.log(LogStatus.INFO,"Click on   :"+locator);
+			log.info("clicking locator :"+locator);
 		}
 		else if(locator.endsWith("_id"))
 		{
 			driver.findElement(By.id(or.getProperty(locator))).click();
 			test.log(LogStatus.INFO,"Click on   :"+locator);
+			log.info("clicking locator :"+locator);
 		}
 		
 		else if(locator.endsWith("_name"))
 		{
 			driver.findElement(By.name(or.getProperty(locator))).click();
 			test.log(LogStatus.INFO,"Click on   :"+locator);
+			log.info("clicking locator :"+locator);
 		}
 		else if(locator.endsWith("_css"))
 		{
 			driver.findElement(By.cssSelector(or.getProperty(locator))).click();
 			test.log(LogStatus.INFO,"Click on   :"+locator);
+			log.info("clicking locator :"+locator);
 		}
 		
 	}
@@ -133,22 +137,27 @@ public class TestBase {
 		{
 			driver.findElement(By.xpath(or.getProperty(locator))).sendKeys(value);
 			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+			log.info("Value Pass is :"+value);
 		}
 		else if(locator.endsWith("_id"))
 		{
 			driver.findElement(By.id(or.getProperty(locator))).sendKeys(value);
 			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+			log.info("Value Pass is :"+value);
 		}
 		
 		else if(locator.endsWith("_name"))
 		{
 			driver.findElement(By.name(or.getProperty(locator))).sendKeys(value);
 			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+			log.info("Value Pass is :"+value);
+		
 		}
 		else if(locator.endsWith("_css"))
 		{
 			driver.findElement(By.cssSelector(or.getProperty(locator))).sendKeys(value);
 			test.log(LogStatus.INFO,"Typing on  :"+locator+"entering value:  "+value);
+			log.info("Value Pass is :"+value);
 		}
 		
 	

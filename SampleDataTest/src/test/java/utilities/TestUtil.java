@@ -103,7 +103,7 @@ public static boolean isTestRunnable(String testName, ExcelReader excel){
 		
 	
 	
-	@DataProvider(name="d") 
+	@DataProvider(name="r") 
 
 	public Object[][] setData(Method m)
 	{
@@ -125,14 +125,13 @@ public static boolean isTestRunnable(String testName, ExcelReader excel){
 			for (int colNum = 0; colNum < cols; colNum++) {
 
 				// data[0][0]
-				table.put("firstName",excel.setData(sheetName,"userName", rowNum,randomEmail()));
+				table.put("emailAddress",excel.setData(sheetName,"emailAddress", rowNum,randomEmail()));
 				data[rowNum - 2][0] = table;
 			}
 
 		}
 
 		return data;
-	
 	}
 	
 	

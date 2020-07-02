@@ -24,16 +24,8 @@ import utilities.TestUtil;
 public class Registration extends TestBase {
 
 	
-	@BeforeTest
-	
-	public void generateTestData()
-	{
-		
-	}
-	
-	
-	
-	@Test(dataProviderClass=TestUtil.class,dataProvider="dp")
+
+@Test(dataProviderClass=TestUtil.class,dataProvider="r")
 	  
 	  public void registration(Hashtable<String,String> data) throws
 	  InterruptedException { 
@@ -43,13 +35,13 @@ public class Registration extends TestBase {
 				throw new SkipException("Skipping the test "+"registration".toUpperCase()+ "as the Run mode is NO");
 			}	  
 		  
-	  System.out.println("Starting Registration");
+	  
 	  log.info("Registration Started");
 	  click("signIn_xpath");
 	  type("newEmail_xpath",data.get("emailAddress")); 
 	  click("createAccount_name");
 	  
-	  //Thread.sleep(5000);
+	  Thread.sleep(5000);
 	  Assert.assertEquals(driver.findElement(By.xpath(or.getProperty(
 	  "verifyRegistration_xpath"))).getText(),"CREATE AN ACCOUNT"); }
 	 
