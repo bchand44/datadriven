@@ -12,9 +12,13 @@ public class DataPovider extends TestBase {
 
 @Test(dataProviderClass=TestUtil.class,dataProvider="d")
 
-public void random(Hashtable<String,String> data)
+public void random(Hashtable<String,String> data) throws InterruptedException
 {
-	System.out.println(data.get("firstName"));
+	
+	String email=data.get("emailAddress");
+	 click("signIn_xpath");
+	 Thread.sleep(3000);
+	 type("newEmail_xpath",email); 
 }
 
 

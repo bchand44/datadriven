@@ -26,6 +26,9 @@ if(!(TestUtil.isTestRunnable("login", excel))){
 		
 		throw new SkipException("Skipping the test "+"login".toUpperCase()+ "as the Run mode is NO");
 	}	
+
+
+log.info("Login Started");
 Thread.sleep(7000);
 click("signIn_xpath");
 Thread.sleep(3000);

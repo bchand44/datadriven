@@ -1,3 +1,7 @@
-INFO    2020-07-01 18:57:50,748 [main] Adding Log  - Config File is loaded
-INFO    2020-07-01 18:57:50,749 [main] Adding Log  - OR File is loaded
-INFO    2020-07-01 18:57:55,377 [main] Adding Log  - driver is closed
+INFO    2020-07-03 19:07:23,711 [main] Adding Log  - Config File is loaded
+INFO    2020-07-03 19:07:23,712 [main] Adding Log  - OR File is loaded
+INFO    2020-07-03 19:07:28,802 [TestNG-test=Registration-1] Adding Log  - Registration Started
+INFO    2020-07-03 19:07:30,452 [TestNG-test=Registration-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-03 19:07:30,622 [TestNG-test=Registration-1] Adding Log  - Value Pass is :olkn@test.com
+INFO    2020-07-03 19:07:30,704 [TestNG-test=Registration-1] Adding Log  - clicking locator :createAccount_name
+INFO    2020-07-03 19:07:41,484 [main] Adding Log  - driver is closed
