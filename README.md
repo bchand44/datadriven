@@ -2,7 +2,7 @@ This is a sample data driven selenium/maven/testng project,the locators are stor
 
 brew tap homebrew/cask && brew cask install chromedriver
 
-Some feature of the project includes -- 
+Some feature of the project includes -
 
 1) Use Testng Dataproviders to read data from excel 
 2) Log4J to log application and selenium logs
