@@ -1,4 +1,4 @@
-This is a sample data driven selenium/maven/testng project, the locators are stored in a file instead of using page object/page factories. Please note this project is utilzing chorme driver installed using home brew so the project will set path to chrome driver referenced. If you want to use homebrew, run the following command-- 
+This is a sample data driven selenium/maven/testng project,the locators are stored in a file instead of using page object/page factories. Please note this project is utilzing chorme driver installed using home brew so the project will set path to chrome driver referenced. If you want to use homebrew, run the following command-
 
 brew tap homebrew/cask && brew cask install chromedriver
 
