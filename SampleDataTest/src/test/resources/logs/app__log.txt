@@ -1,18 +1,7 @@
-INFO    2020-07-01 22:32:16,352 [main] Adding Log  - Config File is loaded
-INFO    2020-07-01 22:32:16,353 [main] Adding Log  - OR File is loaded
-INFO    2020-07-01 22:32:21,692 [TestNG-test=Registration-1] Adding Log  - Registration Started
-INFO    2020-07-01 22:32:22,667 [TestNG-test=Registration-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-01 22:32:22,828 [TestNG-test=Registration-1] Adding Log  - Value Pass is :oshz@test.com
-INFO    2020-07-01 22:32:22,896 [TestNG-test=Registration-1] Adding Log  - clicking locator :createAccount_name
-INFO    2020-07-01 22:32:33,257 [main] Adding Log  - Login Started
-INFO    2020-07-01 22:32:41,237 [main] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-01 22:32:44,441 [main] Adding Log  - Value Pass is :bbb@bbb.com
-INFO    2020-07-01 22:32:47,629 [main] Adding Log  - Value Pass is :bbbbb
-INFO    2020-07-01 22:32:48,910 [main] Adding Log  - clicking locator :login_xpath
-INFO    2020-07-01 22:32:55,248 [main] Adding Log  - clicking locator :signOut_xpath
-INFO    2020-07-01 22:33:01,203 [main] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-01 22:33:01,313 [main] Adding Log  - Value Pass is :bbb@bbb.com
-INFO    2020-07-01 22:33:01,394 [main] Adding Log  - Value Pass is :bbbbb
-INFO    2020-07-01 22:33:02,378 [main] Adding Log  - clicking locator :login_xpath
-INFO    2020-07-01 22:33:12,323 [main] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-01 22:33:33,402 [main] Adding Log  - driver is closed
+INFO    2020-07-03 19:07:23,711 [main] Adding Log  - Config File is loaded
+INFO    2020-07-03 19:07:23,712 [main] Adding Log  - OR File is loaded
+INFO    2020-07-03 19:07:28,802 [TestNG-test=Registration-1] Adding Log  - Registration Started
+INFO    2020-07-03 19:07:30,452 [TestNG-test=Registration-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-03 19:07:30,622 [TestNG-test=Registration-1] Adding Log  - Value Pass is :olkn@test.com
+INFO    2020-07-03 19:07:30,704 [TestNG-test=Registration-1] Adding Log  - clicking locator :createAccount_name
+INFO    2020-07-03 19:07:41,484 [main] Adding Log  - driver is closed

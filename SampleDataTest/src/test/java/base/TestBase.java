@@ -45,6 +45,7 @@ public class TestBase {
     public ExtentReports reports=ExtentManager.getInstance();
     public static ExtentTest test;
     public static WebDriverWait wait;
+    public static String browser;
 	
 	
 	
@@ -61,6 +62,19 @@ public class TestBase {
 	    fis=new FileInputStream(System.getProperty("user.dir")+"//src//test///resources//properties//or");
 	    or.load(fis);
 	    log.info("OR File is loaded");
+	    
+	    // setting browser parameter for jenkins 
+	    
+	    if(System.getenv("browser")!=null && !System.getenv("browser").isEmpty())
+	    {
+	    	browser=System.getenv("browser");
+	    }else { 
+	    	browser=config.getProperty("browser");
+	    }
+	    config.setProperty("browser",browser);
+	    
+	    
+	    
 		if(config.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//exe//chromedriver");

@@ -1,5 +1,5 @@
 browser=chrome
-testurl=http://automationpractice.com/index.php
+testurl=http://automationpractice.com
 implicit.wait=15
 
 
