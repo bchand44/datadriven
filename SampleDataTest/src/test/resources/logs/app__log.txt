@@ -1,11 +1,22 @@
-INFO    2020-07-03 19:57:21,115 [main] Adding Log  - Config File is loaded
-INFO    2020-07-03 19:57:21,116 [main] Adding Log  - OR File is loaded
-INFO    2020-07-03 19:57:26,572 [TestNG-test=Registration-1] Adding Log  - Registration Started
-INFO    2020-07-03 19:57:27,541 [TestNG-test=Registration-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-03 19:57:27,699 [TestNG-test=Registration-1] Adding Log  - Value Pass is :zqio@test.com
-INFO    2020-07-03 19:57:27,770 [TestNG-test=Registration-1] Adding Log  - clicking locator :createAccount_name
-INFO    2020-07-03 19:57:39,066 [main] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-03 19:57:39,176 [main] Adding Log  - Value Pass is :bbb@bbb.com
-INFO    2020-07-03 19:57:39,257 [main] Adding Log  - Value Pass is :bbbbb
-INFO    2020-07-03 19:57:40,224 [main] Adding Log  - clicking locator :login_xpath
-INFO    2020-07-03 19:57:49,325 [main] Adding Log  - driver is closed
+INFO    2020-07-11 21:30:02,179 [main] Adding Log  - Config File is loaded
+INFO    2020-07-11 21:30:02,181 [main] Adding Log  - OR File is loaded
+INFO    2020-07-11 21:30:14,999 [main] Adding Log  - Registration Started
+INFO    2020-07-11 21:30:16,499 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:30:16,940 [main] Adding Log  - Value Pass is :dowr@test.com
+INFO    2020-07-11 21:30:22,135 [main] Adding Log  - clicking locator :createAccount_name
+INFO    2020-07-11 21:30:47,642 [main] Adding Log  - Login Started
+INFO    2020-07-11 21:30:55,883 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:30:59,105 [main] Adding Log  - Value Pass is :bbb@bbb.com
+INFO    2020-07-11 21:31:02,291 [main] Adding Log  - Value Pass is :bbbbb
+INFO    2020-07-11 21:31:03,300 [main] Adding Log  - clicking locator :login_xpath
+INFO    2020-07-11 21:31:09,588 [main] Adding Log  - clicking locator :signOut_xpath
+INFO    2020-07-11 21:31:15,640 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:31:15,796 [main] Adding Log  - Value Pass is :bbb@bbb.com
+INFO    2020-07-11 21:31:15,946 [main] Adding Log  - Value Pass is :bbbbb
+INFO    2020-07-11 21:31:17,051 [main] Adding Log  - clicking locator :login_xpath
+INFO    2020-07-11 21:31:27,731 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:31:54,538 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:32:18,272 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:32:41,978 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:33:05,743 [main] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-11 21:33:28,985 [main] Adding Log  - driver is closed

@@ -32,10 +32,10 @@ public class Parameter extends TestBase {
 		type("password_id",data.get("passWord"));
 		Thread.sleep(2000);
 		click("login_xpath");
-		Thread.sleep(2000);
+		Thread.sleep(15000);
 		softAssertion("Sign out",getText("signOut_xpath"));
 		getText("signOut_xpath");
-		Thread.sleep(3000);
+		Thread.sleep(9000);
 		click("signOut_xpath");
 		Thread.sleep(3000);
 

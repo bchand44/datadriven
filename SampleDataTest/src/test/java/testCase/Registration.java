@@ -39,9 +39,10 @@ public class Registration extends TestBase {
 	  log.info("Registration Started");
 	  click("signIn_xpath");
 	  type("newEmail_xpath",data.get("emailAddress")); 
+	  Thread.sleep(5000);
 	  click("createAccount_name");
 	  
-	  Thread.sleep(5000);
+	  Thread.sleep(20000);
 	  Assert.assertEquals(driver.findElement(By.xpath(or.getProperty(
 	  "verifyRegistration_xpath"))).getText(),"CREATE AN ACCOUNT"); }
 	 

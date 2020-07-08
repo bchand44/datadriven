@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Registration"
-           tests="2"
+<testsuite name="Test"
+           tests="1"
            failures="0"
            errors="0"
-           skipped="2"
-           time="0.017">
+           skipped="0"
+           time="6.160">
   <properties />
   
-            <testcase name="registration" time="0.0" classname="testCase.Registration">
-          <skipped />
-    </testcase>
-            <testcase name="registration" time="0.0" classname="testCase.Registration">
-          <skipped />
-    </testcase>
   
-  
+            <testcase name="registration" time="6.160" classname="testCase.Registration" />
+      
 </testsuite>
