@@ -1,11 +1,2 @@
-INFO    2020-07-03 19:57:21,115 [main] Adding Log  - Config File is loaded
-INFO    2020-07-03 19:57:21,116 [main] Adding Log  - OR File is loaded
-INFO    2020-07-03 19:57:26,572 [TestNG-test=Registration-1] Adding Log  - Registration Started
-INFO    2020-07-03 19:57:27,541 [TestNG-test=Registration-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-03 19:57:27,699 [TestNG-test=Registration-1] Adding Log  - Value Pass is :zqio@test.com
-INFO    2020-07-03 19:57:27,770 [TestNG-test=Registration-1] Adding Log  - clicking locator :createAccount_name
-INFO    2020-07-03 19:57:39,066 [main] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-03 19:57:39,176 [main] Adding Log  - Value Pass is :bbb@bbb.com
-INFO    2020-07-03 19:57:39,257 [main] Adding Log  - Value Pass is :bbbbb
-INFO    2020-07-03 19:57:40,224 [main] Adding Log  - clicking locator :login_xpath
-INFO    2020-07-03 19:57:49,325 [main] Adding Log  - driver is closed
+INFO    2020-07-08 04:11:36,431 [main] Adding Log  - Config File is loaded
+INFO    2020-07-08 04:11:36,432 [main] Adding Log  - OR File is loaded
