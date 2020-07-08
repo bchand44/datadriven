@@ -3,6 +3,7 @@ package base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.net.URL;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
@@ -10,9 +11,12 @@ import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -46,6 +50,7 @@ public class TestBase {
     public static ExtentTest test;
     public static WebDriverWait wait;
     public static String browser;
+    String nodeURL;
 	
 	
 	
@@ -78,7 +83,15 @@ public class TestBase {
 		if(config.getProperty("browser").equalsIgnoreCase("chrome"))
 		{
 			//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"//src//test//resources//exe//chromedriver");
-			driver= new ChromeDriver();
+			//driver= new ChromeDriver();
+			
+			 nodeURL = "http://localhost:4444/wd/hub";
+		        DesiredCapabilities capability = DesiredCapabilities.chrome();
+		        capability.setBrowserName("chrome");
+		        
+		        capability.setPlatform(Platform.WIN10);
+		        driver = new RemoteWebDriver(new URL(nodeURL), capability);
+		        
 		}
 		else if(config.getProperty("browser").equalsIgnoreCase("safari"))
 		{

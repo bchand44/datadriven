@@ -11,44 +11,15 @@
 
 </listeners>
   
-  
-  
-  
-  
-  
-  
-  
-  <test thread-count="5" parallel="classes" name="Registration">
+ <test thread-count="10" parallel="tests" name="Test">
     <classes>
       <class name="testCase.Registration"/>
-      
-      
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Login">
-    <classes>
-      
       <class name="testCase.Login"/>
+       <class name="testCase.Ordering"/>
+       <class name="testCase.VerifyLoginPage"/>
+        <class name="testCase.Parameter"/>
       
     </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="Ordering">
-    <classes>
-      
-      <class name="testCase.Ordering"/>
-      
-    </classes>
-  </test> <!-- Test -->
-  <test thread-count="5" name="VerifyLogin">
-    <classes>
-      
-      <class name="testCase.VerifyLoginPage"/>
-    </classes>
-    </test> <!-- Test -->
-    <test thread-count="5" name="parameter">
-    <classes>
-      
-      <class name="testCase.Parameter"/>
-    </classes>
+  
     </test> <!-- Test -->
 </suite> <!-- Suite -->
