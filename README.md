@@ -8,6 +8,7 @@ Some feature of the project includes -
 2) Log4J to log application and selenium logs
 3) Extent Reports 
 4) Runmodes 
+5) Docker and local Run 
 
 
 Project is work in progress. Read me file will be udpated accordilgy 
