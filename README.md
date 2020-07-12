@@ -11,5 +11,5 @@ Some feature of the project includes -
 5) Docker and local Run 
 
 
-Project is work in progress. Read me file will be udpated accordilgy 
+Project is work in progress. Read me file will be udpated 
 
