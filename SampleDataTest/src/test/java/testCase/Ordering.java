@@ -28,7 +28,7 @@ if(!(TestUtil.isTestRunnable("ordering", excel))){
 	type("existingEmail_xpath","bbb@bbb.com");
 	type("password_id","bbbbb");
 	click("login_xpath");
-	Thread.sleep(3000);
+	Thread.sleep(2000);
 	
 	
 	
