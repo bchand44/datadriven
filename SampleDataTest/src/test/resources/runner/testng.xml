@@ -19,7 +19,7 @@
     </classes>
   
     </test> <!-- Test -->
-    <test thread-count="10" parallel="tests" name="Test">
+    <test thread-count="10" parallel="tests" name="Test1">
     <classes>
       
       <class name="testCase.Login"/>
@@ -28,7 +28,7 @@
     </classes>
   
     </test> <!-- Test -->
-    <test thread-count="10" parallel="tests" name="Test">
+    <test thread-count="10" parallel="tests" name="Test2">
     <classes>
       
        <class name="testCase.Ordering"/>
@@ -37,7 +37,7 @@
     </classes>
   
     </test> <!-- Test -->
-    <test thread-count="10" parallel="tests" name="Test">
+    <test thread-count="10" parallel="tests" name="Test3">
     <classes>
      
        <class name="testCase.VerifyLoginPage"/>
@@ -46,7 +46,7 @@
     </classes>
   
     </test> <!-- Test -->
-    <test thread-count="10" parallel="tests" name="Test5">
+    <test thread-count="10" parallel="tests" name="Test4">
     <classes>
       
         <class name="testCase.Parameter"/>
