@@ -1,2 +1,22 @@
-INFO    2020-07-08 04:11:36,431 [main] Adding Log  - Config File is loaded
-INFO    2020-07-08 04:11:36,432 [main] Adding Log  - OR File is loaded
+INFO    2020-07-13 22:04:57,790 [main] Adding Log  - Config File is loaded
+INFO    2020-07-13 22:04:57,791 [main] Adding Log  - OR File is loaded
+INFO    2020-07-13 22:05:03,392 [TestNG-tests-1] Adding Log  - Registration Started
+INFO    2020-07-13 22:05:04,885 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:05:05,057 [TestNG-tests-1] Adding Log  - Value Pass is :wjhk@test.com
+INFO    2020-07-13 22:05:05,161 [TestNG-tests-1] Adding Log  - clicking locator :createAccount_name
+INFO    2020-07-13 22:05:10,492 [TestNG-tests-1] Adding Log  - Login Started
+INFO    2020-07-13 22:05:19,233 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:05:22,447 [TestNG-tests-1] Adding Log  - Value Pass is :bbb@bbb.com
+INFO    2020-07-13 22:05:25,626 [TestNG-tests-1] Adding Log  - Value Pass is :bbbbb
+INFO    2020-07-13 22:05:26,897 [TestNG-tests-1] Adding Log  - clicking locator :login_xpath
+INFO    2020-07-13 22:05:33,209 [TestNG-tests-1] Adding Log  - clicking locator :signOut_xpath
+INFO    2020-07-13 22:05:34,278 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:05:34,389 [TestNG-tests-1] Adding Log  - Value Pass is :bbb@bbb.com
+INFO    2020-07-13 22:05:34,472 [TestNG-tests-1] Adding Log  - Value Pass is :bbbbb
+INFO    2020-07-13 22:05:35,507 [TestNG-tests-1] Adding Log  - clicking locator :login_xpath
+INFO    2020-07-13 22:05:40,455 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:06:01,900 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:06:25,820 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:06:49,375 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:07:12,827 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-07-13 22:07:35,820 [main] Adding Log  - driver is closed
