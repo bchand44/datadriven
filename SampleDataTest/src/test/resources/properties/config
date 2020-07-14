@@ -1,4 +1,4 @@
-browser=chrome
+browser=safari
 testurl=http://automationpractice.com
 implicit.wait=15
 
