@@ -1,22 +1,25 @@
-INFO    2020-07-13 22:04:57,790 [main] Adding Log  - Config File is loaded
-INFO    2020-07-13 22:04:57,791 [main] Adding Log  - OR File is loaded
-INFO    2020-07-13 22:05:03,392 [TestNG-tests-1] Adding Log  - Registration Started
-INFO    2020-07-13 22:05:04,885 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:05:05,057 [TestNG-tests-1] Adding Log  - Value Pass is :wjhk@test.com
-INFO    2020-07-13 22:05:05,161 [TestNG-tests-1] Adding Log  - clicking locator :createAccount_name
-INFO    2020-07-13 22:05:10,492 [TestNG-tests-1] Adding Log  - Login Started
-INFO    2020-07-13 22:05:19,233 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:05:22,447 [TestNG-tests-1] Adding Log  - Value Pass is :bbb@bbb.com
-INFO    2020-07-13 22:05:25,626 [TestNG-tests-1] Adding Log  - Value Pass is :bbbbb
-INFO    2020-07-13 22:05:26,897 [TestNG-tests-1] Adding Log  - clicking locator :login_xpath
-INFO    2020-07-13 22:05:33,209 [TestNG-tests-1] Adding Log  - clicking locator :signOut_xpath
-INFO    2020-07-13 22:05:34,278 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:05:34,389 [TestNG-tests-1] Adding Log  - Value Pass is :bbb@bbb.com
-INFO    2020-07-13 22:05:34,472 [TestNG-tests-1] Adding Log  - Value Pass is :bbbbb
-INFO    2020-07-13 22:05:35,507 [TestNG-tests-1] Adding Log  - clicking locator :login_xpath
-INFO    2020-07-13 22:05:40,455 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:06:01,900 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:06:25,820 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:06:49,375 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:07:12,827 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
-INFO    2020-07-13 22:07:35,820 [main] Adding Log  - driver is closed
+INFO    2020-08-19 19:10:01,730 [main] Adding Log  - Config File is loaded
+INFO    2020-08-19 19:10:01,731 [main] Adding Log  - OR File is loaded
+INFO    2020-08-19 19:10:09,313 [TestNG-tests-1] Adding Log  - Registration Started
+INFO    2020-08-19 19:10:09,498 [TestNG-tests-1] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-08-19 19:10:12,996 [TestNG-tests-5] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-08-19 19:10:15,446 [TestNG-tests-5] Adding Log  - Value Pass is :bbb@bbb.com
+INFO    2020-08-19 19:10:17,847 [TestNG-tests-5] Adding Log  - Value Pass is :bbbbb
+INFO    2020-08-19 19:10:19,999 [TestNG-tests-5] Adding Log  - clicking locator :login_xpath
+INFO    2020-08-19 19:10:25,307 [TestNG-tests-5] Adding Log  - clicking locator :signOut_xpath
+INFO    2020-08-19 19:10:33,440 [TestNG-tests-5] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-08-19 19:10:35,600 [TestNG-tests-5] Adding Log  - Value Pass is :ccc@ccc.com
+INFO    2020-08-19 19:10:37,723 [TestNG-tests-5] Adding Log  - Value Pass is :ccccc
+INFO    2020-08-19 19:10:39,816 [TestNG-tests-5] Adding Log  - clicking locator :login_xpath
+INFO    2020-08-19 19:10:45,092 [TestNG-tests-5] Adding Log  - clicking locator :signOut_xpath
+INFO    2020-08-19 19:10:53,221 [TestNG-tests-5] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-08-19 19:10:55,420 [TestNG-tests-5] Adding Log  - Value Pass is :VerifyLoginPage
+INFO    2020-08-19 19:10:57,551 [TestNG-tests-5] Adding Log  - Value Pass is :eeeee
+INFO    2020-08-19 19:10:59,647 [TestNG-tests-5] Adding Log  - clicking locator :login_xpath
+INFO    2020-08-19 19:11:04,939 [TestNG-tests-5] Adding Log  - clicking locator :signOut_xpath
+INFO    2020-08-19 19:11:13,047 [TestNG-tests-5] Adding Log  - clicking locator :signIn_xpath
+INFO    2020-08-19 19:11:15,236 [TestNG-tests-5] Adding Log  - Value Pass is :fsd@kk.com
+INFO    2020-08-19 19:11:17,399 [TestNG-tests-5] Adding Log  - Value Pass is :kdkffsfk
+INFO    2020-08-19 19:11:19,491 [TestNG-tests-5] Adding Log  - clicking locator :login_xpath
+INFO    2020-08-19 19:11:24,736 [TestNG-tests-5] Adding Log  - clicking locator :signOut_xpath
+INFO    2020-08-19 19:11:32,882 [main] Adding Log  - driver is closed

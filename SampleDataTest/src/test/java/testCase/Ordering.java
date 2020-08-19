@@ -29,7 +29,7 @@ if(!(TestUtil.isTestRunnable("ordering", excel))){
 	type("password_id","bbbbb");
 	click("login_xpath");
 	Thread.sleep(3000);
-	Assert.fail("Failing the Test");
+	
 	
 	
 }
