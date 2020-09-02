@@ -2,28 +2,21 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-08T03:18:34 EDT" name="Default suite" finished-at="2020-07-08T03:18:43 EDT" duration-ms="8443">
+  <suite started-at="2020-08-19T19:19:10 EDT" name="Default suite" finished-at="2020-08-19T19:19:11 EDT" duration-ms="91">
     <groups>
     </groups>
-    <test started-at="2020-07-08T03:18:34 EDT" name="Default test" finished-at="2020-07-08T03:18:43 EDT" duration-ms="8443">
-      <class name="testCase.Login">
-        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.Login@8c3619e]" started-at="2020-07-08T03:18:31 EDT" name="startDriver" finished-at="2020-07-08T03:18:34 EDT" duration-ms="3151" status="PASS">
+    <test started-at="2020-08-19T19:19:10 EDT" name="Default test" finished-at="2020-08-19T19:19:11 EDT" duration-ms="91">
+      <class name="testCase.Ordering">
+        <test-method is-config="true" signature="startDriver()[pri:0, instance:testCase.Ordering@554e218]" started-at="2020-08-19T19:18:58 EDT" name="startDriver" finished-at="2020-08-19T19:19:10 EDT" duration-ms="12122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startDriver -->
-        <test-method signature="login(java.util.Hashtable)[pri:0, instance:testCase.Login@8c3619e]" started-at="2020-07-08T03:18:34 EDT" name="login" data-provider="dp" finished-at="2020-07-08T03:18:43 EDT" duration-ms="8413" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[{passWord=bbbbb, userName=bbb@bbb.com}]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="ordering()[pri:0, instance:testCase.Ordering@554e218]" started-at="2020-08-19T19:19:10 EDT" name="ordering" finished-at="2020-08-19T19:19:11 EDT" duration-ms="69" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at base.TestBase.click(TestBase.java:135)
-at testCase.Login.login(Login.java:33)
+at base.TestBase.click(TestBase.java:131)
+at testCase.Ordering.ordering(Ordering.java:27)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,12 +50,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.Login@8c3619e]" started-at="2020-07-08T03:18:48 EDT" name="endDriver" finished-at="2020-07-08T03:18:48 EDT" duration-ms="65" status="PASS">
+        </test-method> <!-- ordering -->
+        <test-method is-config="true" signature="endDriver()[pri:0, instance:testCase.Ordering@554e218]" started-at="2020-08-19T19:19:16 EDT" name="endDriver" finished-at="2020-08-19T19:19:16 EDT" duration-ms="99" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endDriver -->
-      </class> <!-- testCase.Login -->
+      </class> <!-- testCase.Ordering -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
